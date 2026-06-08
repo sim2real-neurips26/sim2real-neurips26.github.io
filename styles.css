@@ -136,6 +136,14 @@ strong { font-weight: 700; }
   padding: 14px 0; border-bottom: 1px solid var(--line);
 }
 .org-name { font-weight: 700; color: var(--ink); }
+a.org-name {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid var(--line); width: max-content;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+a.org-name:hover {
+  color: var(--blue); border-bottom-color: var(--gold);
+}
 .org-aff { color: var(--muted); font-size: 0.96rem; font-style: italic; }
 
 /* ===== Info ===== */
